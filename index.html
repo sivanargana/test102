@@ -1,1 +1,14 @@
 <h1>test102</h1>
+
+
+<script>
+  window.addEventListener('message', (event) => {
+   
+    if (event.origin !== 'https://sivanargana.github.io/test101/') {
+        return;  
+    }
+
+  
+    console.log('Received message:', event.data);
+}, false);
+</script>
